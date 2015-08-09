@@ -44,6 +44,11 @@ var app = {
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
 
+        // DEVICE ***************************************************************888
+        $("info").html('Cordova Version: '+device.cordova+'<br>');
+        $("info").append(device.model+'<br>');
+        $("info").append(device.platform+' '+ device.version +'<br>');
+
         console.log('Received Event: ' + id);
     }
 };
